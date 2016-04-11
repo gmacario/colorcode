@@ -3,6 +3,19 @@
 Color Code is an Android App developed by [Gianpaolo Macario](https://gmacario.github.io/)
 as final project for the [Android Study Jam](http://android-studyjam.eventbrite.it/) organized by [GDG Torino](https://www.facebook.com/gdgtorino) in March 2016.
 
+The Idea
+========
+
+The “[Color Code](https://github.com/gmacario/colorcode)” project is an educational Android app which provides five ways to learn how to read and memorize color code of resistors.
+
+Functions:
+
+Select colors, print the resistance value and tolerance
+Type resistance, display color stripes
+Select decade and tolerance, print nominal resistance ranges
+Game: Find the wrong color
+Game: Fill in the missing color
+
 Getting started
 ===============
 
