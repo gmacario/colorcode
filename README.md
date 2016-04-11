@@ -8,13 +8,25 @@ The Idea
 
 The “[Color Code](https://github.com/gmacario/colorcode)” project is an educational Android app which provides five ways to learn how to read and memorize color code of resistors.
 
-Functions:
+### The Target User
 
-Select colors, print the resistance value and tolerance
-Type resistance, display color stripes
-Select decade and tolerance, print nominal resistance ranges
-Game: Find the wrong color
-Game: Fill in the missing color
+A young student who is attempting at learning electrical engineering, or just recognizing the different resistors of his brand new [Arduino Starter Kit](http://www.arduino.cc/en/Main/ArduinoStarterKit).
+
+Persona: Davide (my kid).
+
+### Information needed by the target user
+
+Quick way for learning (and remembering) how to convert color stripes painted on a resistor to actual value of resistance (incl. tolerance).
+
+Maybe use a game to help memorizing.
+
+### The Functions
+
+1. Select colors, print the resistance value and tolerance
+2. Type resistance, display color stripes
+3. Select decade and tolerance, print nominal resistance ranges
+4. Game: Find the wrong color
+5. Game: Fill in the missing color
 
 Getting started
 ===============
