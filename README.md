@@ -8,6 +8,11 @@ Getting started
 
 Start Android Studio
 
+Contributing to Color Code
+==========================
+
+[Pull Requests](https://github.com/gmacario/colorcode/pulls) are welcome!
+
 Licensing
 =========
 
