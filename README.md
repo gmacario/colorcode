@@ -31,8 +31,8 @@ Maybe use a game to help memorizing.
 5. Game: Fill in the missing color
 
 
-The App Design
-===============
+The Design of the App
+=====================
 
 See [App Design (PDF)](colorcode-design-20160413-1656.pdf).
 
