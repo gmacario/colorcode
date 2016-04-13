@@ -12,13 +12,15 @@ The “[Color Code](https://github.com/gmacario/colorcode)” project is an educ
 
 A young student who is attempting at learning electrical engineering, or just recognizing the different resistors of his brand new [Arduino Starter Kit](http://www.arduino.cc/en/Main/ArduinoStarterKit).
 
-Persona: Davide (my kid).
+Persona: Filippo (my younger kid).
+
 
 ### Information needed by the target user
 
 Quick way for learning (and remembering) how to convert color stripes painted on a resistor to actual value of resistance (incl. tolerance).
 
 Maybe use a game to help memorizing.
+
 
 ### The Functions
 
@@ -27,6 +29,13 @@ Maybe use a game to help memorizing.
 3. Select decade and tolerance, print nominal resistance ranges
 4. Game: Find the wrong color
 5. Game: Fill in the missing color
+
+
+The App Design
+===============
+
+See [App Design (PDF)](colorcode-design-20160413-1656.pdf).
+
 
 Getting started
 ===============
@@ -51,16 +60,19 @@ Inside Android Studio: **Run** > **Run 'app'**
 
 Select Deployment target (choose Emulator `Nexus 5 API 23 x86`), then click **OK**.
 
+
 Known issues and limitations
 ============================
 
 1. The App does not do anything really useful right now
 1. Only Emulated target is supported. You may try running the app on your mobile phone connected via ADB, Your Mileage May Vary
 
+
 Contributing to Color Code
 ==========================
 
 [Pull Requests](https://github.com/gmacario/colorcode/pulls) are welcome!
+
 
 Licensing
 =========
