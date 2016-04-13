@@ -1,1 +1,1 @@
-Directory containing images inside README.md (not those for the actual App)
+Directory containing used by toplevel README.md (not those for the actual App)
