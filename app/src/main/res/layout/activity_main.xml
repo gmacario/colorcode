@@ -9,8 +9,118 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="it.solarma.android.colorcode.MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="1dp"
+        android:id="@+id/linearLayout">
+
+        // TODO: extend to full screen width
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="F1"
+                android:id="@+id/button1"
+                android:layout_alignParentTop="true" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="F2"
+                android:id="@+id/button2"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/button1" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="F3"
+                android:id="@+id/button3"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/button2" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="F4"
+                android:id="@+id/button4"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/button3" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="F5"
+                android:id="@+id/button5"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/button4" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Color Code!" />
+        android:id="@+id/scrollView"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp" >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="FUNC1"
+                android:id="@+id/textView"
+                android:textStyle="bold|italic"
+                android:textSize="40sp" />
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="FUNC2"
+                android:id="@+id/textView"
+                android:textStyle="bold|italic"
+                android:textSize="40sp" />
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="FUNC3"
+                android:id="@+id/textView"
+                android:textStyle="bold|italic"
+                android:textSize="40sp" />
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="FUNC4"
+                android:id="@+id/textView"
+                android:textStyle="bold|italic"
+                android:textSize="40sp" />
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="FUNC5"
+                android:id="@+id/textView"
+                android:textStyle="bold|italic"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
 </RelativeLayout>
