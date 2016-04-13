@@ -3,6 +3,31 @@
 Color Code is an Android App developed by [Gianpaolo Macario](https://gmacario.github.io/)
 as final project for the [Android Study Jam](http://android-studyjam.eventbrite.it/) organized by [GDG Torino](https://www.facebook.com/gdgtorino) in March 2016.
 
+
+Getting started
+===============
+
+Download [Android Studio](http://developer.android.com/sdk/index.html) 2.0 for Windows.
+
+Install Android Studio on your laptop.
+
+Start Android Studio, then **Check out project from Version Control** > **Git**
+
+> Clone Repository
+>
+> * Git Repository URL: `https://github.com/gmacario/colorcode`
+> * Parent Directory: `C:\Users\gmacario\AndroidStudioProjects`
+> * Directory Name: `colorcode`
+
+then click **Clone**.
+
+Inside Android Studio: **Build** > **Make Project**
+
+Inside Android Studio: **Run** > **Run 'app'**
+
+Select Deployment target (choose Emulator `Nexus 5 API 23 x86`), then click **OK**.
+
+
 The Idea
 ========
 
@@ -35,30 +60,6 @@ The Design of the App
 =====================
 
 See [App Design (PDF)](colorcode-design-20160413-1656.pdf).
-
-
-Getting started
-===============
-
-Download [Android Studio](http://developer.android.com/sdk/index.html) 2.0 for Windows.
-
-Install Android Studio on your laptop.
-
-Start Android Studio, then **Check out project from Version Control** > **Git**
-
-> Clone Repository
->
-> * Git Repository URL: `https://github.com/gmacario/colorcode`
-> * Parent Directory: `C:\Users\gmacario\AndroidStudioProjects`
-> * Directory Name: `colorcode`
-
-then click **Clone**.
-
-Inside Android Studio: **Build** > **Make Project**
-
-Inside Android Studio: **Run** > **Run 'app'**
-
-Select Deployment target (choose Emulator `Nexus 5 API 23 x86`), then click **OK**.
 
 
 Known issues and limitations
