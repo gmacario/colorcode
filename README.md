@@ -3,6 +3,7 @@
 Color Code is an Android App developed by [Gianpaolo Macario](https://gmacario.github.io/)
 as final project for the [Android Study Jam](http://android-studyjam.eventbrite.it/) organized by [GDG Torino](https://www.facebook.com/gdgtorino) in March 2016.
 
+![Color Code Logo](app/src/main/res/drawable-hdpi/ir_attachment_6846.jpeg)
 
 Getting started
 ===============
