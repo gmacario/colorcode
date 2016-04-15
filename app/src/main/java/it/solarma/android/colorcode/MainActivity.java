@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-        
+
         showSomething("Color Code\nCopyright 2016, Gianpaolo Macario");
     }
 
