@@ -10,10 +10,9 @@
     tools:context="it.solarma.android.colorcode.MainActivity"
     android:orientation="vertical">
 
-    <GridLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="3">
+        android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/button1"
@@ -22,7 +21,7 @@
             android:layout_alignParentTop="true"
             android:layout_weight="1"
             android:onClick="chooseFunc1"
-            android:text="Show value"
+            android:text="Show Value"
             android:textSize="10sp" />
 
         <Button
@@ -51,34 +50,44 @@
             android:id="@+id/button4"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@id/button3"
+            android:layout_alignParentTop="false"
             android:layout_weight="1"
             android:onClick="chooseFunc4"
             android:text="Wrong Color?"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/button3" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentTop="false"
             android:layout_toRightOf="@id/button4"
             android:layout_weight="1"
             android:onClick="chooseFunc5"
             android:text="Missing Color?"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:layout_below="@+id/button2" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
             android:layout_toRightOf="@id/button5"
             android:layout_weight="1"
             android:onClick="chooseFunc6"
             android:text="About"
-            android:textSize="10sp" /></GridLayout>
+            android:textSize="10sp"
+            android:layout_below="@+id/button3" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+    </GridLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -92,11 +101,12 @@
 
             <TextView
                 android:id="@+id/textView_func1"
-                android:layout_width="200sp"
-                android:layout_height="wrap_content"
-                android:text="FUNC1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="FUNC1\nShow Value"
                 android:textSize="40sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:gravity="center_horizontal" />
         </LinearLayout>
 
         <LinearLayout
@@ -156,23 +166,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/linearLayout"
-        android:layout_alignRight="@+id/linearLayout"
-        android:layout_centerVertical="true"
-        android:layout_margin="0dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-        </LinearLayout>
-
-    </ScrollView>
 
 </LinearLayout>
