@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
         showSomething("echo");
     }
 
+    public void chooseFunc6(View view) {
+        showSomething("foxtrot");
+    }
+
     /**
      * Displays the given score for Team A.
      */
