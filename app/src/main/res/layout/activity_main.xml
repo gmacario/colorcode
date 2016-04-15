@@ -149,7 +149,7 @@
                 android:id="@+id/textView_func2"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
-                android:text="FUNC2"
+                android:text="FUNC2\nShow Color"
                 android:textSize="40sp"
                 android:textStyle="bold|italic" />
         </LinearLayout>
@@ -163,7 +163,7 @@
                 android:id="@+id/textView_func3"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
-                android:text="FUNC3"
+                android:text="FUNC3\nNominal Values"
                 android:textSize="40sp"
                 android:textStyle="bold|italic" />
         </LinearLayout>
@@ -177,7 +177,7 @@
                 android:id="@+id/textView_func4"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
-                android:text="FUNC4"
+                android:text="FUNC4\nWrong Color?"
                 android:textSize="40sp"
                 android:textStyle="bold|italic" />
         </LinearLayout>
@@ -191,7 +191,7 @@
                 android:id="@+id/textView_func5"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
-                android:text="FUNC5"
+                android:text="FUNC5\nMissing Color?"
                 android:textSize="40sp"
                 android:textStyle="bold|italic" />
         </LinearLayout>
