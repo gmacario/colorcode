@@ -34,7 +34,7 @@
                 android:id="@+id/button1"
                 android:layout_alignParentTop="true"
                 android:layout_weight="1"
-                />
+                android:textSize="10sp" />
 
             <Button
                 android:layout_width="50dp"
@@ -43,7 +43,8 @@
                 android:id="@+id/button2"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@id/button1"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="10sp" />
 
             <Button
                 android:layout_width="50dp"
@@ -52,25 +53,28 @@
                 android:id="@+id/button3"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@id/button2"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="10sp" />
 
             <Button
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:text="Find Wrong Color"
+                android:text="Wrong Color?"
                 android:id="@+id/button4"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@id/button3"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="10sp" />
 
             <Button
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
-                android:text="Fill-in Missing Color"
+                android:text="Missing Color?"
                 android:id="@+id/button5"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@id/button4"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="10sp" />
 
         </LinearLayout>
     </LinearLayout>
