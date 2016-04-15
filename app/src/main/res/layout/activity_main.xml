@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
@@ -7,125 +7,172 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="it.solarma.android.colorcode.MainActivity">
+    tools:context="it.solarma.android.colorcode.MainActivity"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="1dp"
-        android:id="@+id/linearLayout"
-        android:layout_margin="0dp">
+        android:columnCount="3">
 
-        // TODO: extend to full screen width
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:onClick="chooseFunc1"
+            android:text="Show value"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/button1"
+            android:layout_weight="1"
+            android:onClick="chooseFunc2"
+            android:text="Show Color"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/button2"
+            android:layout_weight="1"
+            android:onClick="chooseFunc3"
+            android:text="Nominal Values"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/button3"
+            android:layout_weight="1"
+            android:onClick="chooseFunc4"
+            android:text="Wrong Color?"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/button4"
+            android:layout_weight="1"
+            android:onClick="chooseFunc5"
+            android:text="Missing Color?"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/button5"
+            android:layout_weight="1"
+            android:onClick="chooseFunc6"
+            android:text="About"
+            android:textSize="10sp" /></GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="Show value"
-                android:id="@+id/button1"
-                android:layout_alignParentTop="true"
-                android:layout_weight="1"
-                />
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="Show Color"
-                android:id="@+id/button2"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@id/button1"
-                android:layout_weight="1" />
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="Nominal Values"
-                android:id="@+id/button3"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@id/button2"
-                android:layout_weight="1" />
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="Find Wrong Color"
-                android:id="@+id/button4"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@id/button3"
-                android:layout_weight="1" />
-
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="Fill-in Missing Color"
-                android:id="@+id/button5"
-                android:layout_alignParentTop="true"
-                android:layout_toRightOf="@id/button4"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/linearLayout"
-        android:layout_alignEnd="@+id/linearLayout"
-        android:layout_margin="0dp">
-
-        <LinearLayout
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/textView_func1"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:text="FUNC1"
-                android:id="@+id/textView"
-                android:textStyle="bold|italic"
-                android:textSize="40sp" />
+                android:textSize="40sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <TextView
+                android:id="@+id/textView_func2"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:text="FUNC2"
-                android:id="@+id/textView"
-                android:textStyle="bold|italic"
-                android:textSize="40sp" />
+                android:textSize="40sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <TextView
+                android:id="@+id/textView_func3"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:text="FUNC3"
-                android:id="@+id/textView"
-                android:textStyle="bold|italic"
-                android:textSize="40sp" />
+                android:textSize="40sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <TextView
+                android:id="@+id/textView_func4"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:text="FUNC4"
-                android:id="@+id/textView"
-                android:textStyle="bold|italic"
-                android:textSize="40sp" />
+                android:textSize="40sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <TextView
+                android:id="@+id/textView_func5"
                 android:layout_width="200sp"
                 android:layout_height="wrap_content"
                 android:text="FUNC5"
-                android:id="@+id/textView"
-                android:textStyle="bold|italic"
-                android:textSize="40sp" />
+                android:textSize="40sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:layout_margin="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
         </LinearLayout>
 
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>
