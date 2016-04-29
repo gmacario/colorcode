@@ -45,34 +45,54 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void chooseFunc1(View view) {
-        showSomething("Function 1\nShow Value");
+        showSomething("Function 1\nShow Value",1);
     }
 
     public void chooseFunc2(View view) {
-        showSomething("Function 2\nShow Color");
+        showSomething("Function 2\nShow Color",2);
     }
 
     public void chooseFunc3(View view) {
-        showSomething("Function 3\nNominal Values");
+        showSomething("Function 3\nNominal Values",3);
     }
 
     public void chooseFunc4(View view) {
-        showSomething("Function 4\nFind the Wrong Color");
+        showSomething("Function 4\nFind the Wrong Color",4);
     }
 
     public void chooseFunc5(View view) {
-        showSomething("Function 5\nFind the Missing Color");
+        showSomething("Function 5\nFind the Missing Color",5);
     }
 
     public void chooseFunc6(View view) {
-        showSomething("Color Code\nCopyright 2016, Gianpaolo Macario");
+        showSomething("Color Code\nCopyright 2016, Gianpaolo Macario",6);
     }
 
     /**
      * Displays the given score for Team A.
      */
-    public void showSomething(String text) {
-        TextView scoreView = (TextView) findViewById(R.id.textView_func1);
+    public void showSomething(String text,int choice) {
+        TextView scoreView;
+        if(choice == 1 || choice == 6)
+        {
+          scoreView = (TextView) findViewById(R.id.textView_func1);   
+        }
+        else if(choice == 2)
+        {
+          scoreView = (TextView) findViewById(R.id.textView_func2);   
+        }  
+        else if(choice == 3)
+        {
+          scoreView = (TextView) findViewById(R.id.textView_func3);   
+        }   
+        else if(choice == 4)
+        {
+          scoreView = (TextView) findViewById(R.id.textView_func4);   
+        }   
+        else if(choice == 5)
+        {
+          scoreView = (TextView) findViewById(R.id.textView_func5);   
+        }   
         //scoreView.setText(String.valueOf(score));
         scoreView.setText(text);
     }
