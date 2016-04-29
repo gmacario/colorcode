@@ -99,7 +99,7 @@
                 android:text="Color Code v1.0"
                 android:id="@+id/textView"
                 android:layout_gravity="center_horizontal"
-                android:paddingTop="20sp"
+                android:paddingTop="20dp"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -147,7 +147,7 @@
 
             <TextView
                 android:id="@+id/textView_func2"
-                android:layout_width="200sp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="FUNC2\nShow Color"
                 android:textSize="40sp"
@@ -161,7 +161,7 @@
 
             <TextView
                 android:id="@+id/textView_func3"
-                android:layout_width="200sp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="FUNC3\nNominal Values"
                 android:textSize="40sp"
@@ -175,7 +175,7 @@
 
             <TextView
                 android:id="@+id/textView_func4"
-                android:layout_width="200sp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="FUNC4\nWrong Color?"
                 android:textSize="40sp"
@@ -189,7 +189,7 @@
 
             <TextView
                 android:id="@+id/textView_func5"
-                android:layout_width="200sp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="FUNC5\nMissing Color?"
                 android:textSize="40sp"
