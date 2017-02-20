@@ -71,25 +71,25 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Team A.
      */
-    public void showSomething(String text,int choice) {
+    public void showSomething (String text,int choice) {
         TextView scoreView = null;
-        if(choice == 1 || choice == 6)
+        if (choice <= 1 || choice >= 6)
         {
           scoreView = (TextView) findViewById(R.id.textView_func1);   
         }
-        else if(choice == 2)
+        else if (choice == 2)
         {
           scoreView = (TextView) findViewById(R.id.textView_func2);   
         }  
-        else if(choice == 3)
+        else if (choice == 3)
         {
           scoreView = (TextView) findViewById(R.id.textView_func3);   
         }   
-        else if(choice == 4)
+        else if (choice == 4)
         {
           scoreView = (TextView) findViewById(R.id.textView_func4);   
         }   
-        else if(choice == 5)
+        else if (choice == 5)
         {
           scoreView = (TextView) findViewById(R.id.textView_func5);   
         }
