@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Team A.
      */
     public void showSomething(String text,int choice) {
-        TextView scoreView;
+        TextView scoreView = null;
         if(choice == 1 || choice == 6)
         {
           scoreView = (TextView) findViewById(R.id.textView_func1);   
@@ -92,8 +92,7 @@ public class MainActivity extends AppCompatActivity {
         else if(choice == 5)
         {
           scoreView = (TextView) findViewById(R.id.textView_func5);   
-        }   
-        //scoreView.setText(String.valueOf(score));
+        }
         scoreView.setText(text);
     }
 
