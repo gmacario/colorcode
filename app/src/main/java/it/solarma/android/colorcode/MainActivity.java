@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
 
-        showSomething("Color Code\nCopyright 2016, Gianpaolo Macario");
+        showSomething("Color Code\nCopyright 2016-2017, Gianpaolo Macario", 1);
     }
 
 //    /**
